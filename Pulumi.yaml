@@ -1,0 +1,16 @@
+name: pulumi-go-gcp-db-firestore
+description: A Pulumi Go project for Google Cloud Firestore Database
+runtime: go
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: gcp-go
+  gcp:region:
+    description: 'The GCP region for Firestore (Free Tier: us-west1, us-central1, us-east1)'
+    value: us-central1
+  firestore:databaseId:
+    description: The ID of the Firestore database
+    value: (default)
+  firestore:databaseType:
+    description: The type of Firestore database (FIRESTORE_NATIVE or DATASTORE_MODE)
+    value: FIRESTORE_NATIVE

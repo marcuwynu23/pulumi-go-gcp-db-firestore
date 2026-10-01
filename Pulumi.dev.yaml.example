@@ -1,0 +1,5 @@
+config:
+  gcp:project: your-project-id
+  gcp:region: us-central1
+  firestore:databaseId: "(default)"
+  firestore:databaseType: FIRESTORE_NATIVE
